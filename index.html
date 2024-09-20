@@ -1,0 +1,141 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qiaowen Mei - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Qiaowen Mei</h1>
+        <p>
+            Software Engineer
+            <a href="Resume Mei.pdf" target="_blank" class="resume-link">Resume</a>
+        </p>
+    </header>
+
+    <section id="home" class="hero">
+        <img src="self.jpg" alt="Your Photo">
+        <div class="hero-text">
+            <h2>Welcome to my portfolio!</h2>
+            <p>Explore my work and get in touch!</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2><i class="fas fa-user"></i> About Me</h2>
+        <p>Hello! I am Qiaowen Mei, a student majoring in Computer Science.</p>
+        <p>I want to contribute my passion for developing innovative programs that expedite the efficiency and effectiveness of your company's success.</p>
+        <p>My educational background is in Quantitative Finance and Economics, and Computer Science.</p>
+        <p>I have experience in solving complex problems and hope to create user-friendly applications.</p>
+    </section>
+
+    <section id="projects">
+        <h2><i class="fas fa-code"></i> Projects</h2>
+        <div class="project">
+            <h3><i class="fas fa-store"></i> E-commerce Website for Cat Products</h3>
+            <p>Designed, developed, and deployed a dynamic, user-friendly, and readable full stack e-commerce platform for cat products.</p>
+            <p><strong>Technologies Used:</strong> React.js, React Router, CSS, Bootstrap, Firebase</p>
+            <p><strong>Features:</strong> User authentication, responsive design, secure shopping and payment system.</p>
+            <a href="https://github.com/Mei0707/e-commerce-for-cat.git">GitHub Repository</a>
+            <img src="ecommerce.jpg" alt="E-commerce Website Screenshot">
+        </div>
+
+        <div class="project">
+            <h3><i class="fas fa-home"></i> Housing Prices Prediction</h3>
+            <p>Conducted a machine learning model in Python of the Boston housing price dataset, examining various features to achieve accurate price estimates.</p>
+            <p><strong>Technologies Used:</strong> Python, scikit-learn</p>
+            <p><strong>Features:</strong> Implemented regression algorithms including Linear Regression, Decision Tree.</p>
+            <a href="#">GitHub Repository</a>
+        </div>
+
+        <div class="project">
+            <h3><i class="fas fa-microphone-alt"></i> Speech Contest Management System</h3>
+            <p>Developed a C++ application to manage a speech contest, handling over 100 speaker entries with key features like speaker management.</p>
+            <p><strong>Technologies Used:</strong> C++, STL, File I/O</p>
+            <p><strong>Features:</strong> Data integrity and persistence through effective file handling and record management.</p>
+            <a href="https://github.com/Mei0707/Speech_Contest.git">GitHub Repository</a>
+        </div>
+
+        <div class="project">
+            <h3><i class="fas fa-closed-captioning"></i> Video Subtitle Translation</h3>
+            <p>An AI-based software that removes hardcoded subtitles from videos, with automated subtitle translation features.</p>
+            <p><strong>Technologies Used:</strong> Python, OpenGL, ComfyUI</p>
+            <p><strong>Features:</strong> Uses advanced algorithms for subtitle removal and integration with ComfyUI.</p>
+            <a href="https://github.com/Mei0707/video_translation.git">GitHub Repository</a>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+        <div class="experience">
+            <h3>Algorithm Engineer at SuperADS</h3>
+            <p><strong>Duration:</strong> June 2024 - Aug 2-024</p>
+            <p><strong>Key Responsibilities:</strong></p>
+            <ul>
+                <li>Developed and optimized video translation algorithms, integrating AI-powered subtitle translations to enhance user experience.</li>
+                <li>Designed and implemented an advanced rendering engine using OpenGL to improve real-time video processing capabilities.</li>
+                <li>Collaborated with cross-functional teams to streamline media workflows, achieving a 30% increase in processing efficiency.</li>
+                <li>Improved subtitle removal and translation efficiency by integrating video processing with ComfyUI, reducing manual intervention.</li>
+            </ul>
+            <p><strong>Achievements:</strong> Received the team's priority prize and positive feedback for refining algorithmic solutions, resulting in better media processing performance and usability.</p>
+        </div>
+    </section>
+    
+
+    <section id="skills">
+        <h2><i class="fas fa-laptop-code"></i> Skills</h2>
+        <ul>
+            <li><strong>Programming Languages:</strong> C++, Python, JavaScript, Java, C#, Ruby, Swift, Go, R, TypeScript</li>
+            <li><strong>Web Development:</strong> HTML, CSS, React.js, Node.js, Bootstrap, Angular, Vue.js, SASS/SCSS, jQuery</li>
+            <li><strong>Database:</strong> MySQL, MongoDB, Oracle Database, Firebase</li>
+            <li><strong>Tools & Technologies:</strong> Git, Docker, AWS, Google Cloud Platform, Postman</li>
+        </ul>
+    </section>
+
+    <section id="fun-facts">
+        <h2><i class="fas fa-lightbulb"></i> Fun Facts</h2>
+        <ul>
+            <li>I love playing badminton and have a mean smash shot!</li>
+            <li>I’m currently learning Japanese and Korean on Duolingo – feel free to challenge me!</li>
+            <li>Cats are my favorite animals, which inspired me to create my e-commerce project for cat products.</li>
+            <li>I once built a full-stack web app in under 48 hours during a hackathon – powered by coffee, of course!</li>
+        </ul>
+    </section>
+    
+
+    <section id="contact">
+        <h2><i class="fas fa-envelope"></i> Contact</h2>
+        <form action="submit_form.php" method="post">
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="email" name="email" placeholder="Your Email">
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p>Email: mqiaowen@gmail.com</p>
+        <p>Tel: (205) - 844 - 2191</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/qiaowen-mei-267460233/">LinkedIn</a></li>
+            <li><a href="https://github.com/Mei0707">GitHub</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Qiaowen Mei. All rights reserved.</p>
+    </footer>
+    <div class="scroll-to-top">&#8679;</div>
+</body>
+</html>
