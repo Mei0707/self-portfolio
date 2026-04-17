@@ -1,141 +1,285 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qiaowen Mei - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Quincy Mei | Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
+    <header class="site-header">
+        <nav class="nav">
+            <a href="#home" class="brand">QM</a>
+            <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <h1>Qiaowen Mei</h1>
-        <p>
-            Software Engineer
-            <a href="Resume Mei.pdf" target="_blank" class="resume-link">Resume</a>
-        </p>
     </header>
 
-    <section id="home" class="hero">
-        <img src="self.jpg" alt="Your Photo">
-        <div class="hero-text">
-            <h2>Welcome to my portfolio!</h2>
-            <p>Explore my work and get in touch!</p>
-        </div>
-    </section>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Full-Time Software Engineer Candidate • Distributed Systems • AI Applications</p>
+                <h1>Quincy Mei</h1>
+                <p class="hero-summary">
+                    I build reliable backends, search systems, and AI-powered products with a focus on performance,
+                    scalability, and clean developer experience.
+                </p>
+                <div class="hero-actions">
+                    <a href="Quincy resume.pdf" target="_blank" class="button button-primary">View Resume</a>
+                    <a href="#projects" class="button button-secondary">See Projects</a>
+                </div>
+                <ul class="hero-highlights">
+                    <li>MS in Computer Science at Northeastern University, expected May 2026</li>
+                    <li>Built systems supporting 500+ concurrent users and 300K+ indexed documents</li>
+                    <li>Currently seeking full-time software engineering roles</li>
+                </ul>
+            </div>
+            <div class="hero-visual">
+                <div class="portrait-card">
+                    <img src="self.jpg" alt="Portrait of Quincy Mei">
+                    <div class="portrait-badge">
+                        <span>Now focusing on</span>
+                        <strong>Backend + Search + AI tooling</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="about">
-        <h2><i class="fas fa-user"></i> About Me</h2>
-        <p>Hello! I am Qiaowen Mei, a student majoring in Computer Science.</p>
-        <p>I want to contribute my passion for developing innovative programs that expedite the efficiency and effectiveness of your company's success.</p>
-        <p>My educational background is in Quantitative Finance and Economics, and Computer Science.</p>
-        <p>I have experience in solving complex problems and hope to create user-friendly applications.</p>
-    </section>
+        <section id="about" class="section">
+            <div class="section-heading">
+                <p class="section-label">About</p>
+                <h2>Engineering products that stay fast as they grow</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <p>
+                        I am a software engineer with a background in computer science, quantitative finance, and economics.
+                        My recent work has centered on backend platforms, distributed systems, search infrastructure, and
+                        AI-powered product experiences.
+                    </p>
+                    <p>
+                        I enjoy turning complex workflows into dependable systems, whether that means reducing API latency,
+                        designing resilient job pipelines, or building better search and ranking experiences for users. I am
+                        currently looking for full-time software engineering opportunities where I can contribute to
+                        product-minded engineering teams and keep growing in backend and platform work.
+                    </p>
+                    <p>
+                        Outside of tech, I care a lot about creativity and community. I love cats and have fostered many of
+                        them, which has taught me patience, consistency, and a lot of joy in the small moments. I also enjoy
+                        oil painting, playing piano, and playing badminton, and those parts of my life keep me curious,
+                        grounded, and energized.
+                    </p>
+                </div>
+                <div class="stats-card">
+                    <div class="stat">
+                        <strong>20%</strong>
+                        <span>API latency reduction in production microservice work</span>
+                    </div>
+                    <div class="stat">
+                        <strong>30%</strong>
+                        <span>Processing throughput improvement in video pipelines</span>
+                    </div>
+                    <div class="stat">
+                        <strong>85%</strong>
+                        <span>Code coverage established through CI/CD and testing</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="projects">
-        <h2><i class="fas fa-code"></i> Projects</h2>
-        <div class="project">
-            <h3><i class="fas fa-store"></i> E-commerce Website for Cat Products</h3>
-            <p>Designed, developed, and deployed a dynamic, user-friendly, and readable full stack e-commerce platform for cat products.</p>
-            <p><strong>Technologies Used:</strong> React.js, React Router, CSS, Bootstrap, Firebase</p>
-            <p><strong>Features:</strong> User authentication, responsive design, secure shopping and payment system.</p>
-            <a href="https://github.com/Mei0707/e-commerce-for-cat.git">GitHub Repository</a>
-            <img src="ecommerce.jpg" alt="E-commerce Website Screenshot">
-        </div>
+        <section id="introduction" class="section section-alt">
+            <div class="section-heading">
+                <p class="section-label">Introduction</p>
+                <h2>A little more about me</h2>
+            </div>
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <h3>Cat Foster Parent</h3>
+                    <p>
+                        I have fostered many cats, and it is one of the most meaningful parts of my life outside work.
+                        It has taught me empathy, responsibility, and how much personality can fit into a very small creature.
+                    </p>
+                </article>
+                <article class="skill-card">
+                    <h3>Creative Side</h3>
+                    <p>
+                        Oil painting and piano give me a different kind of problem-solving space. They help me slow down,
+                        notice details, and stay connected to creativity outside engineering.
+                    </p>
+                </article>
+                <article class="skill-card">
+                    <h3>What Keeps Me Active</h3>
+                    <p>
+                        I enjoy playing badminton and like activities that keep me moving, focused, and competitive in a fun way.
+                        It is one of the ways I recharge and bring fresh energy back into my work.
+                    </p>
+                </article>
+            </div>
+        </section>
 
-        <div class="project">
-            <h3><i class="fas fa-home"></i> Housing Prices Prediction</h3>
-            <p>Conducted a machine learning model in Python of the Boston housing price dataset, examining various features to achieve accurate price estimates.</p>
-            <p><strong>Technologies Used:</strong> Python, scikit-learn</p>
-            <p><strong>Features:</strong> Implemented regression algorithms including Linear Regression, Decision Tree.</p>
-            <a href="#">GitHub Repository</a>
-        </div>
+        <section id="experience" class="section section-alt">
+            <div class="section-heading">
+                <p class="section-label">Experience</p>
+                <h2>Building scalable systems in production</h2>
+            </div>
+            <article class="timeline-card">
+                <div class="timeline-top">
+                    <div>
+                        <h3>Software Engineer Intern</h3>
+                        <p class="timeline-company">SuperADS • Guangzhou, China</p>
+                    </div>
+                    <p class="timeline-date">June 2024 - August 2024</p>
+                </div>
+                <p>
+                    At SuperADS, I worked on video translation infrastructure and backend systems that needed to be both
+                    fast and reliable. My work focused on distributed services, multithreaded C++ processing pipelines,
+                    and delivery workflows that improved performance, automation, and production stability.
+                </p>
+            </article>
+        </section>
 
-        <div class="project">
-            <h3><i class="fas fa-microphone-alt"></i> Speech Contest Management System</h3>
-            <p>Developed a C++ application to manage a speech contest, handling over 100 speaker entries with key features like speaker management.</p>
-            <p><strong>Technologies Used:</strong> C++, STL, File I/O</p>
-            <p><strong>Features:</strong> Data integrity and persistence through effective file handling and record management.</p>
-            <a href="https://github.com/Mei0707/Speech_Contest.git">GitHub Repository</a>
-        </div>
+        <section id="projects" class="section">
+            <div class="section-heading">
+                <p class="section-label">Projects</p>
+                <h2>Selected work across AI, search, and distributed systems</h2>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card featured-project">
+                    <div class="project-tag">Featured</div>
+                    <h3>GradHunt</h3>
+                    <p class="project-stack">AWS, Python, Node.js, React, Vite, Express, MongoDB</p>
+                    <p>
+                        AI-powered job search platform built for scale, with a searchable job pipeline, multi-source
+                        normalization, resume-aware ranking, and secure application workflows.
+                    </p>
+                    <a href="https://github.com/Mei0707/GradHunt" target="_blank" rel="noreferrer" class="text-link">View GitHub</a>
+                </article>
 
-        <div class="project">
-            <h3><i class="fas fa-closed-captioning"></i> Video Subtitle Translation</h3>
-            <p>An AI-based software that removes hardcoded subtitles from videos, with automated subtitle translation features.</p>
-            <p><strong>Technologies Used:</strong> Python, OpenGL, ComfyUI</p>
-            <p><strong>Features:</strong> Uses advanced algorithms for subtitle removal and integration with ComfyUI.</p>
-            <a href="https://github.com/Mei0707/video_translation.git">GitHub Repository</a>
-        </div>
-    </section>
+                <article class="project-card">
+                    <h3>Mini Search Engine</h3>
+                    <p class="project-stack">C++, OpenAI GPT-4, CMake</p>
+                    <p>
+                        Search engine from scratch for large-scale information retrieval with custom indexing,
+                        BM25 ranking, typo correction, and optional GPT-powered query rewriting.
+                    </p>
+                    <a href="https://github.com/Mei0707/mini-search-engine" target="_blank" rel="noreferrer" class="text-link">View GitHub</a>
+                </article>
 
-    <section id="experience">
-        <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
-        <div class="experience">
-            <h3>Algorithm Engineer at SuperADS</h3>
-            <p><strong>Duration:</strong> June 2024 - Aug 2-024</p>
-            <p><strong>Key Responsibilities:</strong></p>
-            <ul>
-                <li>Developed and optimized video translation algorithms, integrating AI-powered subtitle translations to enhance user experience.</li>
-                <li>Designed and implemented an advanced rendering engine using OpenGL to improve real-time video processing capabilities.</li>
-                <li>Collaborated with cross-functional teams to streamline media workflows, achieving a 30% increase in processing efficiency.</li>
-                <li>Improved subtitle removal and translation efficiency by integrating video processing with ComfyUI, reducing manual intervention.</li>
-            </ul>
-            <p><strong>Achievements:</strong> Received the team's priority prize and positive feedback for refining algorithmic solutions, resulting in better media processing performance and usability.</p>
-        </div>
-    </section>
-    
+                <article class="project-card">
+                    <h3>Distributed Task Queue System</h3>
+                    <p class="project-stack">Go, Redis, Asynq</p>
+                    <p>
+                        Production-style asynchronous task execution system focused on resilient background jobs and
+                        operational visibility.
+                    </p>
+                    <a href="https://github.com/Mei0707/Distributed-Task-Queue" target="_blank" rel="noreferrer" class="text-link">View GitHub</a>
+                </article>
 
-    <section id="skills">
-        <h2><i class="fas fa-laptop-code"></i> Skills</h2>
-        <ul>
-            <li><strong>Programming Languages:</strong> C++, Python, JavaScript, Java, C#, Ruby, Swift, Go, R, TypeScript</li>
-            <li><strong>Web Development:</strong> HTML, CSS, React.js, Node.js, Bootstrap, Angular, Vue.js, SASS/SCSS, jQuery</li>
-            <li><strong>Database:</strong> MySQL, MongoDB, Oracle Database, Firebase</li>
-            <li><strong>Tools & Technologies:</strong> Git, Docker, AWS, Google Cloud Platform, Postman</li>
-        </ul>
-    </section>
+                <article class="project-card">
+                    <h3>Bayesian Network Credit Risk Model</h3>
+                    <p class="project-stack">Python, Bayesian Networks, Risk Modeling</p>
+                    <p>
+                        A probabilistic modeling project focused on credit risk analysis and decision support through
+                        interpretable statistical relationships.
+                    </p>
+                    <a href="https://github.com/Mei0707/Bayesian_network_credit_risk_model" target="_blank" rel="noreferrer" class="text-link">View GitHub</a>
+                </article>
 
-    <section id="fun-facts">
-        <h2><i class="fas fa-lightbulb"></i> Fun Facts</h2>
-        <ul>
-            <li>I love playing badminton and have a mean smash shot!</li>
-            <li>I’m currently learning Japanese and Korean on Duolingo – feel free to challenge me!</li>
-            <li>Cats are my favorite animals, which inspired me to create my e-commerce project for cat products.</li>
-            <li>I once built a full-stack web app in under 48 hours during a hackathon – powered by coffee, of course!</li>
-        </ul>
-    </section>
-    
+                <article class="project-card">
+                    <h3>Friendify Social App</h3>
+                    <p class="project-stack">Full-Stack Application Development</p>
+                    <p>
+                        A social platform project centered on user interaction, connection features, and building a
+                        complete end-to-end application experience.
+                    </p>
+                    <a href="https://github.com/Mei0707/friendify_social_app" target="_blank" rel="noreferrer" class="text-link">View GitHub</a>
+                </article>
 
-    <section id="contact">
-        <h2><i class="fas fa-envelope"></i> Contact</h2>
-        <form action="submit_form.php" method="post">
-            <input type="text" name="name" placeholder="Your Name">
-            <input type="email" name="email" placeholder="Your Email">
-            <textarea name="message" placeholder="Your Message"></textarea>
-            <button type="submit">Send</button>
-        </form>
-        <p>Email: mqiaowen@gmail.com</p>
-        <p>Tel: (205) - 844 - 2191</p>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/qiaowen-mei-267460233/">LinkedIn</a></li>
-            <li><a href="https://github.com/Mei0707">GitHub</a></li>
-        </ul>
-    </section>
+                <article class="project-card media-card">
+                    <div>
+                        <h3>E-commerce Website</h3>
+                        <p class="project-stack">React, Firebase, CSS, Bootstrap</p>
+                        <p>
+                            A full-stack e-commerce site for cat products that reflects my earlier frontend and product-building work.
+                        </p>
+                        <a href="https://github.com/Mei0707/e-commerce-for-cat.git" target="_blank" rel="noreferrer" class="text-link">View GitHub</a>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-    <footer>
-        <p>&copy; 2024 Qiaowen Mei. All rights reserved.</p>
+        <section id="education" class="section section-alt">
+            <div class="section-heading">
+                <p class="section-label">Education</p>
+                <h2>Academic foundation across computer science and quantitative analysis</h2>
+            </div>
+            <div class="education-grid">
+                <article class="education-card">
+                    <h3>Northeastern University</h3>
+                    <p class="education-meta">San Jose, CA • Expected May 2026</p>
+                    <p>Master of Science in Computer Science</p>
+                </article>
+                <article class="education-card">
+                    <h3>University of West Alabama</h3>
+                    <p class="education-meta">Livingston, AL • Graduated 2023</p>
+                    <p>Bachelor of Business Administration in Quantitative Finance and Economics</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="section-heading">
+                <p class="section-label">Skills</p>
+                <h2>Core technologies I work with</h2>
+            </div>
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <h3>Languages</h3>
+                    <p>Python, JavaScript, TypeScript, C++, C#, SQL, Java, Go</p>
+                </article>
+                <article class="skill-card">
+                    <h3>Frameworks & Tools</h3>
+                    <p>React, Node.js, Vite, Express, JWT, Django, Docker, Kubernetes, Spring Boot, Jest, Git, CI/CD, CMake, FFmpeg, OpenGL, Google Test, Asynq</p>
+                </article>
+                <article class="skill-card">
+                    <h3>Systems & Cloud</h3>
+                    <p>MySQL, MongoDB, PostgreSQL, Redis, RESTful APIs, Microservices, AWS Lambda, S3, API Gateway, DynamoDB, ElasticSearch</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="section-heading">
+                <p class="section-label">Contact</p>
+                <h2>Let’s build something thoughtful and reliable</h2>
+            </div>
+            <div class="contact-card">
+                <p>
+                    I am currently looking for full-time software engineering opportunities in backend engineering,
+                    platform work, AI applications, and distributed systems.
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:quincy.mmei@gmail.com">quincy.mmei@gmail.com</a>
+                    <a href="tel:2058442191">205-844-2191</a>
+                    <a href="https://www.linkedin.com/in/qiaowen-mei-267460233/" target="_blank" rel="noreferrer">LinkedIn</a>
+                    <a href="https://github.com/Mei0707" target="_blank" rel="noreferrer">GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Quincy Mei. All rights reserved.</p>
     </footer>
-    <div class="scroll-to-top">&#8679;</div>
 </body>
 </html>
